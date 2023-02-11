@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  mongo:
+    container_name: 'mongo_db'
+    image: mongo
+    environment:
+      MONGO_PASS: password
+      MONGO_USER: root
+    ports:
+      - 8080:27017
